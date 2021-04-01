@@ -6,8 +6,8 @@ const package = require('./package.json');
 
 module.exports = {
     mode: 'production',
-    // target: "node",
-    // externals: [nodeExternals()],
+    target: "node",
+    externals: [nodeExternals()],
     entry: {
         simpleBitcoinWallet: './src/lib/SimpleBitcoinWallet.ts',
         simpleBitcoinDatabase: './src/lib/SimpleBitcoinDatabase.ts',
